@@ -1,0 +1,71 @@
+C:\Denis\Cegep\Programmation orientée objet\Cegep\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.csprojAssemblyReference.cache
+C:\Denis\Cegep\Programmation orientée objet\Cegep\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.FormGestionCegep.resources
+C:\Denis\Cegep\Programmation orientée objet\Cegep\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.Properties.Resources.resources
+C:\Denis\Cegep\Programmation orientée objet\Cegep\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.csproj.GenerateResource.cache
+C:\Denis\Cegep\Programmation orientée objet\Cegep\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.csproj.CoreCompileInputs.cache
+C:\Denis\Cegep\Programmation orientée objet\Cegep\ProjetCegep\ProjetCegep\bin\Debug\ProjetCegep.exe.config
+C:\Denis\Cegep\Programmation orientée objet\Cegep\ProjetCegep\ProjetCegep\bin\Debug\ProjetCegep.exe
+C:\Denis\Cegep\Programmation orientée objet\Cegep\ProjetCegep\ProjetCegep\bin\Debug\ProjetCegep.pdb
+C:\Denis\Cegep\Programmation orientée objet\Cegep\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.exe
+C:\Denis\Cegep\Programmation orientée objet\Cegep\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.pdb
+C:\Users\keven\Desktop\ProjetCegep\ProjetCegep\bin\Debug\ProjetCegep.exe.config
+C:\Users\keven\Desktop\ProjetCegep\ProjetCegep\bin\Debug\ProjetCegep.exe
+C:\Users\keven\Desktop\ProjetCegep\ProjetCegep\bin\Debug\ProjetCegep.pdb
+C:\Users\keven\Desktop\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.csprojAssemblyReference.cache
+C:\Users\keven\Desktop\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.FormGestionCegep.resources
+C:\Users\keven\Desktop\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.Properties.Resources.resources
+C:\Users\keven\Desktop\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.csproj.GenerateResource.cache
+C:\Users\keven\Desktop\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.csproj.CoreCompileInputs.cache
+C:\Users\keven\Desktop\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.exe
+C:\Users\keven\Desktop\ProjetCegep\ProjetCegep\obj\Debug\ProjetCegep.pdb
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 3\Cours 5\TP1\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csprojAssemblyReference.cache
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 3\Cours 5\TP1\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.Properties.Resources.resources
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 3\Cours 5\TP1\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.GenerateResource.cache
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 3\Cours 5\TP1\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.CoreCompileInputs.cache
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 3\Cours 5\TP1\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.exe
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 3\Cours 5\TP1\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.pdb
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 3\Cours 5\TP1\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.exe.config
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 3\Cours 5\TP1\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.exe
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 3\Cours 5\TP1\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.pdb
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 3\Cours 5\TP1\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.Vues.FormGestionCegep.resources
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 4\Cours 7\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.exe.config
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 4\Cours 7\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.exe
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 4\Cours 7\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.pdb
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 4\Cours 7\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csprojAssemblyReference.cache
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 4\Cours 7\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.Vues.FormGestionCegep.resources
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 4\Cours 7\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.Properties.Resources.resources
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 4\Cours 7\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.GenerateResource.cache
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 4\Cours 7\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.CoreCompileInputs.cache
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 4\Cours 7\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.exe
+F:\Cegep RDL\1 - COURS\A_Programmation native\5 - Cours\2019\Semaine 4\Cours 7\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.pdb
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.exe.config
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.exe
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.pdb
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.AssemblyReference.cache
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.SuggestedBindingRedirects.cache
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.Vues.FormGestionCegep.resources
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.Properties.Resources.resources
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.GenerateResource.cache
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.CoreCompileInputs.cache
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.exe
+D:\_CegepRDL\1 - COURS\A_Programmation native\5 - Cours\2022\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.pdb
+C:\Users\keven\Desktop\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.AssemblyReference.cache
+C:\Users\keven\Desktop\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.Vues.FormGestionCegep.resources
+C:\Users\keven\Desktop\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.Properties.Resources.resources
+C:\Users\keven\Desktop\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.GenerateResource.cache
+C:\Users\keven\Desktop\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.CoreCompileInputs.cache
+C:\Users\keven\Desktop\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.exe
+C:\Users\keven\Desktop\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.pdb
+C:\Users\keven\Desktop\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.exe.config
+C:\Users\keven\Desktop\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.exe
+C:\Users\keven\Desktop\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.pdb
+D:\_CegepRDL\1 - COURS\_A_Programmation native\5 - Cours\2024\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.exe.config
+D:\_CegepRDL\1 - COURS\_A_Programmation native\5 - Cours\2024\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.exe
+D:\_CegepRDL\1 - COURS\_A_Programmation native\5 - Cours\2024\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\bin\Debug\ProjetCegep.pdb
+D:\_CegepRDL\1 - COURS\_A_Programmation native\5 - Cours\2024\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.AssemblyReference.cache
+D:\_CegepRDL\1 - COURS\_A_Programmation native\5 - Cours\2024\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.Vues.FormGestionCegep.resources
+D:\_CegepRDL\1 - COURS\_A_Programmation native\5 - Cours\2024\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.Properties.Resources.resources
+D:\_CegepRDL\1 - COURS\_A_Programmation native\5 - Cours\2024\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.GenerateResource.cache
+D:\_CegepRDL\1 - COURS\_A_Programmation native\5 - Cours\2024\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.csproj.CoreCompileInputs.cache
+D:\_CegepRDL\1 - COURS\_A_Programmation native\5 - Cours\2024\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.exe
+D:\_CegepRDL\1 - COURS\_A_Programmation native\5 - Cours\2024\Semaine 6\Cours 11\ProjetCegepMVC\ProjetCegep\obj\Debug\ProjetCegep.pdb
