@@ -77,25 +77,18 @@ namespace ProjetCegep.Controleurs
         /// </summary>
         /// <param name="cegep">Le DTO du Cégep.</param>
         /// <returns>True si modifié, False sinon...</returns>
-        public bool ModifierCegep(CegepDTO cegep)
+        public void ModifierCegep(CegepDTO cegepDTO)
         {
-            if (monCegep.Nom.Equals(cegep.Nom))
-                if (monCegep.Adresse != cegep.Adresse ||
-                    monCegep.Ville != cegep.Ville ||
-                    monCegep.Province != cegep.Province ||
-                    monCegep.CodePostal != cegep.CodePostal ||
-                    monCegep.Telephone != cegep.Telephone ||
-                    monCegep.CodePostal != cegep.CodePostal)
-                {
-                    monCegep.Adresse = cegep.Adresse;
-                    monCegep.Ville = cegep.Ville;
-                    monCegep.Province = cegep.Province;
-                    monCegep.CodePostal = cegep.CodePostal;
-                    monCegep.Telephone = cegep.Telephone;
-                    monCegep.CodePostal = cegep.CodePostal;
-                    return true;
-                }
-            return false;
+            CegepDTO cegepDTO = ObtenirCegep();
+            Cegep cegepBD = new Cegep(cegepDTOBD.Nom, cegepDTOBD.Adresse, cegepDTOBD.Ville, cegepDTOBD.Province, cegepDTOBD.CodePostal, cegepDTOBD.Telephone, cegepDTOBD.Courriel);
+
+            if (cegepDTO.Nom.Equals("Cégep Rivière-du-Loup"))
+                if (cegepDTO.Adresse != cegepBD.Adresse || cegepDTO.Ville != cegepBD.Ville || cegepDTO.Province != cegepBD.Province || cegepDTO.CodePostal != cegepBD.CodePostal || cegepDTO.Telephone != cegepBD.Telephone || cegepDTO.Courriel != cegepBD.Courriel)
+                    CegepRepository.Instance.ModifierCegep(cegepDTO);
+                else
+                    throw new Exception("Erreur - Veuillez modifier au moins une valeur.");
+            else
+                throw new Exception("Erreur - Vous devez utiliser le Cégep Rivière-du-Loup...");
         }
 
         /// <summary>
