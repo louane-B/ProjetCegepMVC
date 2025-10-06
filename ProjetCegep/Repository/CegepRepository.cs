@@ -1,44 +1,97 @@
-using ProjetCegep.DTO
+using ProjetCegep.DTO;
 using System;
 using System.Data.SqlClient;
+using System.Data;
+using ProjetCegep.Exceptions;
 
 namespace ProjetCegep.Repository
 {
-    public CegepRepository : Repository
+    public class CegepRepository : Repository
     {
-        private static CegepRepository _instance;
-        public static CegepRepository Instance => _instance ??= new CegepRepository();
+        #region AttributsProprietes
+        private static CegepRepository instance;
         
+        public static CegepRepository Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new CegepRepository();
+                }
+                return instance;
+            }
+        }
+        
+        #endregion AttributsProprietes
+        
+        #region Constructeurs
+        
+        /// <summary>
+        /// Constructeur de CegepRepository
+        /// </summary>
+        private CegepRepository() : base() { }
+
+        #endregion Constructeur
+
+        #region MethodesServices
+
+        /// <summary>
+        /// Methodes Permettant de modifier un cegep
+        /// </summary>
+        /// <param name="cegepDTO"></param>
+        /// <exception cref="Exception"></exception>
         public void ModifierCegep(CegepDTO cegepDTO)
         {
-        if (!OuvrirConnexion())
-            throw new Exception("Impossible d'ouvrir la connexion à la base de données.");
+            sqlCommand command = new sqlCommand(null, connexion);
+            
+            command.commandText = " UPDATE Cegep" +
+                                    " SET Adresse = @adresse," +
+                                    "     Ville = @Ville," +
+                                    "     Province = @province," +
+                                    "     CodePostal = @codePostal," +
+                                    "     Telephone = @telephone," +
+                                    "     Courriel = @courriel" +
+                                    "WHERE Nom = @nom";
 
-        string requete = @"
-            UPDATE Cegep
-            SET Adresse = @Adresse,
-                Ville = @Ville,
-                Province = @Province,
-                CodePostal = @CodePostal,
-                Telephone = @Telephone,
-                Courriel = @Courriel
-            WHERE Nom = @Nom";
+            SqlParameter nomParam = new SqlParameter("@nom", SqlDbType.VarChar, 50);
+            SqlParameter adresseParam = new SqlParameter("@adresse", SqlDbType.VarChar, 100);
+            SqlParameter villeParam = new SqlParameter("@ville", SqlDbType.VarChar, 75);
+            SqlParameter provinceParam = new SqlParameter("@province", SqlDbType.VarChar, 50);
+            SqlParameter codePostalParam = new SqlParameter("@codePostal", SqlDbType.VarChar, 7);
+            SqlParameter telephoneParam = new SqlParameter("@telephone", SqlDbType.VarChar, 12);
+            SqlParameter courrielParam = new SqlParameter("@courriel", SqlDbType, 100);
 
-        using (SqlCommand commande = new SqlCommand(requete, connexion))
-        {
-            commande.Parameters.AddWithValue("@Nom", cegepDTO.Nom);
-            commande.Parameters.AddWithValue("@Adresse", cegepDTO.Adresse);
-            commande.Parameters.AddWithValue("@Ville", cegepDTO.Ville);
-            commande.Parameters.AddWithValue("@Province", cegepDTO.Province);
-            commande.Parameters.AddWithValue("@CodePostal", cegepDTO.CodePostal);
-            commande.Parameters.AddWithValue("@Telephone", cegepDTO.Telephone);
-            commande.Parameters.AddWithValue("@Courriel", cegepDTO.Courriel);
+            nomParam.Value = cegepDTO.Name;
+            adresseParam.Value = cegepDTO.Description;
+            villeParam.Value = cegepDTO.Ville;
+            provinceParam = cegepDTO.Province;
+            codePostalParam.Value = cegepDTO.Code;
+            telephoneParam.Value = cegepDTO.Telephone;
+            courrielParam.Value = cegepDTO.Courriel;
 
-            int lignesModifiees = commande.ExecuteNonQuery();
-            if (lignesModifiees == 0)
-                throw new Exception("Aucune modification effectuée. Vérifiez que le cégep existe.");
-        }
-        FermerConnexion();
+            command.Parameters.Add(nomParam);
+            command.Parameters.Add(adresseParam);
+            command.Parameters.Add(villeParam);
+            command.Parameters.Add(provinceParam);
+            command.Parameters.Add(codePostalParam);
+            command.Parameters.Add(telephoneParam);
+            command.Parameters.Add(courrielParam);
+
+            try
+            {
+                OuvrirConnexion();
+                command.prepare();
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur lors de la modification d'un Cegep ...", ex);
+            }
+            finally
+            {
+                FermerConnexion();
+            }
         }
 
 
