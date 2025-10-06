@@ -68,8 +68,20 @@ namespace ProjetCegep.Controleurs
         /// <returns>True si créé, False sinon...</returns>
         public bool CreerCegep(CegepDTO cegep)
         {
-            monCegep = new Cegep(cegep.Nom, cegep.Adresse, cegep.Ville, cegep.Province, cegep.CodePostal, cegep.Telephone, cegep.Courriel);
-            return monCegep != null;
+            if (!cegep.Nom.Equals("Cégep Rivière-du-Loup"))
+                throw new Exception("Erreur - Vous devez utiliser le Cégep Rivière-du-Loup ...");
+            try
+            {
+                CegepRepository.Instance.AjouterCegep(cegep);
+                monCegep = new Cegep(cegep.Nom, cegep.Adresse, cegep.Ville, cegep.Province, cegep.CodePostal, cegep.Telephone, cegep.Courriel);
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur lors de la création du cégep : " + ex.Message);
+                return false;
+            }
         }
 
         /// <summary>
@@ -77,18 +89,26 @@ namespace ProjetCegep.Controleurs
         /// </summary>
         /// <param name="cegep">Le DTO du Cégep.</param>
         /// <returns>True si modifié, False sinon...</returns>
-        public void ModifierCegep(CegepDTO cegepDTO)
+        public bool ModifierCegep(CegepDTO cegepDTO)
         {
-            CegepDTO cegepDTO = ObtenirCegep();
-            Cegep cegepBD = new Cegep(cegepDTOBD.Nom, cegepDTOBD.Adresse, cegepDTOBD.Ville, cegepDTOBD.Province, cegepDTOBD.CodePostal, cegepDTOBD.Telephone, cegepDTOBD.Courriel);
+            CegepDTO cegepActuel = ObtenirCegep();
 
             if (cegepDTO.Nom.Equals("Cégep Rivière-du-Loup"))
-                if (cegepDTO.Adresse != cegepBD.Adresse || cegepDTO.Ville != cegepBD.Ville || cegepDTO.Province != cegepBD.Province || cegepDTO.CodePostal != cegepBD.CodePostal || cegepDTO.Telephone != cegepBD.Telephone || cegepDTO.Courriel != cegepBD.Courriel)
+            {
+                if (cegepActuel.Adresse != cegepDTO.Adresse || cegepActuel.Ville != cegepDTO.Ville || cegepActuel.Province != cegepDTO.Province || cegepActuel.CodePostal != cegepDTO.CodePostal || cegepActuel.Telephone != cegepDTO.Telephone || cegepActuel.Courriel != cegepDTO.Courriel)
+                {
                     CegepRepository.Instance.ModifierCegep(cegepDTO);
+                    return true;
+                }
                 else
+                {
                     throw new Exception("Erreur - Veuillez modifier au moins une valeur.");
+                }
+            }
             else
+            {
                 throw new Exception("Erreur - Vous devez utiliser le Cégep Rivière-du-Loup...");
+            }
         }
 
         /// <summary>
@@ -97,8 +117,26 @@ namespace ProjetCegep.Controleurs
         /// <returns>True si supprimé, False sinon...</returns>
         public bool SupprimerCegep()
         {
-            monCegep = null;
-            return monCegep == null;
+            if (monCegep == null)
+                throw new Exception("Erreur - Aucun cégep n'est actuellement chargé.");
+            if (!monCegep.Nom.Equals("Cégep Rivière-du-Loup"))
+
+            if (!cegepDTO.Nom.Equals("Cégep Rivière-du-Loup"))
+                throw new Exception("Erreur - Vous devez utiliser le Cégep Rivière-du-Loup...");
+
+            try
+            {
+                CegepDTO cegepDTO = new CegepDTO(monCegep);
+                CegepRepository.Instance.SupprimerCegep(CegepDTO);
+
+                monCegep = null;
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur lors de la suppression : " + ex.Message);
+                return false;
+            }
         }
 
         /// <summary>
@@ -107,9 +145,19 @@ namespace ProjetCegep.Controleurs
         /// <returns>Le DTO du Cégep.</returns>
         public CegepDTO ObtenirCegep()
         {
-            if (monCegep != null)
-                return new CegepDTO(monCegep);
-            return null;
+            try
+            {
+                CegepDTO cegepDTO = CegeRepository.Instance.ObtenirCegep("Cégep Rivière-du-loup");
+
+                monCegep = new Cegep(cegepDTO.Nom, cegepDTO.Adresse, cegepDTO.Ville, cegepDTO.Province, cegepDTO.CodePostal, cegepDTO.Telephone, cegepDTO.Courriel);
+
+                return cegepDTO;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur lors de l'obtention du cégep : " + ex.Message);
+                return null;
+            }
         }
 
         #endregion MethodesCegep
